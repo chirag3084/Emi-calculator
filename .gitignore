@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+backend/.venv/
+backend/.env
+
+# Flutter / Dart
+.flutter-plugins
+.flutter-plugins-dependencies
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+.flutter-*
+.metadata
+android/local.properties
+ios/Flutter/Generated.xcconfig
