@@ -6,11 +6,12 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "dev-only-change-this-key")
 DEBUG = os.getenv("DJANGO_DEBUG", "True").lower() in {"1", "true", "yes"}
 if not DEBUG and SECRET_KEY == "dev-only-change-this-key":
     raise RuntimeError("Set DJANGO_SECRET_KEY before running with DJANGO_DEBUG=False.")
-ALLOWED_HOSTS = [
-    host.strip()
-    for host in os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
-    if host.strip()
-]
+#ALLOWED_HOSTS = [
+   # host.strip()
+    #for host in os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
+    #if host.strip()
+#]  
+ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
